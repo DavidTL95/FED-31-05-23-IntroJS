@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 // let numero1 = Number(prompt("Introduce el número 1"))
 // let numero2 = Number(prompt("Introduce el número 2"))
 
@@ -156,20 +158,17 @@
 
     //RETO 9
 
-        // let segundos = 0
-        // let minutos = 0
-        // let horas = 0
+        let minutos = 0
+        let horas = 0
 
-        // for(let i = 0 ; i < 100 ; i++){
+        // for(let i = 60 ; i === 0 ; i--){
 
-        //     segundos += 1
-
-        //     if(segundos == 60){
+        //     if(i > 0){
         //         minutos += 1
-        //         segundos = 0
+        //         i = 60
         //     }
 
-        //     if(minutos == 60){
+        //     if(minutos === 60){
         //         horas += 1
         //         minutos = 0
         //     }
@@ -287,20 +286,173 @@
 
         // if(num1 < num2){
         //     console.log(`El número más grande es el: ${num2}, por lo tanto el menor es el número: ${num1}.`)
-        // } else{
+        // }else if(num1 > num2){
+        //     console.log(`El número más grande es el: ${num1}, por lo tanto el menor es el número: ${num2}.`)
+        // }else{
         //     console.log("Son iguales.")
         // }
+
+    //RETO 16 - Mayor.
+
+        // let num1 = Number(prompt("Introduce el primer número."))
+        // let num2 = Number(prompt("Introduce el segundo número."))
+        // let num3 = Number(prompt("Introduce el tercer número."))
+
+        // if(num1 < num2 && num3 < num2){
+        //     console.log(`El segundo número es el mayor.`)
+        // } else if(num1 > num2 && num1 > num3){
+        //     console.log(`El primer número es el mayor.`)
+        // }else{
+        //     console.log(`El tercer número es el mayor.`)
+        // }
+
+    //RETO 17 - Comprobación negativo.
+
+        // let num1 = Number(prompt("Introduce el primer número."))
+        // let num2 = Number(prompt("Introduce el segundo número."))
+        // let num3 = Number(prompt("Introduce el tercer número."))
+
+        // if(num1 < 0 || num2 < 0 || num3 < 0){
+        //     console.log(num1 * num2 * num3)
+        // }else{
+        //     console.log(num1 + num2 + num3)
+        // }
+
+    //RETO 18 - Negativo, potencia y raíz.
+
+        // let num = Number(prompt("Introduce el primer número."))
+
+        // if(num <= 0){
+        //     console.log("Error crítico")
+        // }else{
+        //     let multiplo = num*num
+        //     let raiz = Math.sqrt(num)
+        //     console.log(`Del número: ${num}, su potencia es: ${multiplo} y su raíz: ${raiz}`)
+        // }
+
+    //RETO 19 - Porcentaje alumnos.
+
+        // let numNinhos = Number(prompt("Introduce el número de niños."))
+        // let numNinhas = Number(prompt("Introduce el número de niñas."))
+
+        // const calculoPorcentaje = (ninhos, ninhas) => {
+
+        //     let totalAlumnos = ninhos + ninhas
+
+        //     let porcentajeNinhos = (ninhos/totalAlumnos)*100
+
+        //     let porcentajeNinhas = totalAlumnos - porcentajeNinhos
+
+        //     console.log(`El porcentaje de niños es de: ${porcentajeNinhos}%, y el de niñas de: ${porcentajeNinhas}%`)
+        // }
+
+        // console.log(calculoPorcentaje(numNinhas,numNinhas))
+
+    //RETO 20 - Porcentaje compra.
+
+        // let mes = prompt("Introduce el mes en el que estamos.")
+        // let precio = Number(prompt("Introduce precio total."))
+
+        // mes.toLowerCase()
+
+        // if(mes == "octubre"){
+
+        //     let descuento = precio * (15 / 100)
+        //     let preciototal = precio - descuento
+
+        //     console.log(`El precio final con el descuento es de: ${preciototal}`) 
+        //     }else{
+        //         console.log(`El precio final es de: ${precio}`)
+        // }
+
+    //RETO 21/22 - Par, impar o 0.
+
+        // let numero = Number(prompt("Introduce el número que quieres analizar."))
+
+        // const ParImparOCero = (num) => {
+        //     if(num % 2 === 0 && num !== 0){
+        //         console.log("Es par.")
+        //     }else if(num % 2 !== 2 && num !== 0){
+        //         console.log("Es impar.")
+        //     }else if(num === 0){
+        //         while(num <= 0){
+        //             num = prompt("Introduce un número mayor que cero, por favor.")
+        //         }
+        //         ParImparOCero(num)
+        //     } else{
+        //         console.log("Esto es un error.")
+        //     }
+        //     }
+
+        // console.log(ParImparOCero(numero))
+
+    //RETO 23 - Acceso ciclo superior.
+
+        // let bach = prompt("¿Tienes bachiller? (True/False)")
+
+        // bach.toLowerCase()
+
+        // if(bach === "true"){
+        //     console.log("Puedes acceder a un ciclo superior. ^^")
+        // } else{
+        //     let prueba = prompt("¿Superaste la prueba de acceso? nm (True/False)")
+        //     prueba.toLowerCase()
+
+        //     if(prueba === "true"){
+        //         console.log("Puedes acceder a un ciclo superior. ^^")
+        //     } else{
+        //         console.log("No puedes acceder a un ciclo superior.")
+        //     }
+        // }
+
+    //RETO 24 - Cuadrado números naturales.
+
+        // for (i = 0; i <= 9; i++){
+        //     console.log(`${i}:`, i*i)
+        // }
+
+    //RETO 25 - Suma N números naturales.
+
+        // let num = Number(prompt("¿Cuántos números quieres analizar?"))
+
+        // for(i = 0; i < num ; i++){
+        //     console.log(`${i}`, i + i)
+        // }
     
+    //RETO 26 - Suma N números pares.
+
+        let num = Number(prompt("¿Cuántos números quieres analizar?"))
+
+        for(i = num; i < num*2 ; i++){
+            if(i % 2 === 0){
+                let suma = suma + i
+            }
+            console.log(suma)
+        }
     
+    //KATA Validación DNI.
 
+        // let dni = [prompt("Introduce tu DNI sin la letra")]
+        // let letra = [prompt("Introduce la letra de tu DNI")]
 
+        // //let dniSinLetra = Number([dni.pop])
+        // //let letra = [dni[8]]
 
-    
+        // let stringLetras = "TRWAGMYFPDXBNJZSQVHLCKET"
+        // let comprobacionLetra = stringLetras.split("")
 
+        // const validarDNI = (dni, letra) =>{
 
+        //     let modulo = dni % 23
 
+        //     if(letra == comprobacionLetra[modulo]){
+        //         return "El DNI es válido"
+        //     }else{
+        //         return "El DNI es falso"
+        //     }
+        // }
 
-
+        // console.log(validarDNI(dni, letra))
 
 
 

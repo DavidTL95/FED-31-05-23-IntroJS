@@ -1,0 +1,14 @@
+{
+  "name": "fed-31-05-23-introjs",
+  "version": "1.0.0",
+  "description": "Retos js",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "4.2.0"
+  }
+}
