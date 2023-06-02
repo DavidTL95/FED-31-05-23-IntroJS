@@ -88,7 +88,7 @@ const prompt = require("prompt-sync")();
 
         // const calcularHipotenusa = (num1,num2) => {
         //     let resultado = num1*num1 + num2*num2
-        //     hipotenusa = Math.sqrt(resultado)
+        //     hipotenusa = Math.sqrt(resultado).toFixed(2)
         //     return hipotenusa
         // }
 
@@ -158,8 +158,8 @@ const prompt = require("prompt-sync")();
 
     //RETO 9
 
-        let minutos = 0
-        let horas = 0
+        // let minutos = 0
+        // let horas = 0
 
         // for(let i = 60 ; i === 0 ; i--){
 
@@ -421,15 +421,280 @@ const prompt = require("prompt-sync")();
     
     //RETO 26 - Suma N números pares.
 
-        let num = Number(prompt("¿Cuántos números quieres analizar?"))
+        //MAL
 
-        for(i = num; i < num*2 ; i++){
-            if(i % 2 === 0){
-                let suma = suma + i
-            }
-            console.log(suma)
-        }
+            // let num = Number(prompt("¿Cuántos números quieres analizar?"))
+            // let suma = 0
+            // let contador = 0
+            // let i = num
+
+            // while(contador < num){
+            //     if(num % 2 === 0){
+            //         suma = suma + i
+            //         contador = contador + 1
+            //         i++
+            //     }
+            // }
+
+            // console.log(suma)
+
+        // const esPar = (num) {
+        //     if(num % 2 === 0){
+        //         return true
+        //     } else{
+        //         return false
+        //     }
+        // }
+
+        //FORMA 1
+
+            // let cantidadPares = Number(prompt("¿Cuántos pares quieres sumar?"))
+            // let suma = 0
+
+            // for(let i = 2; i <= cantidadPares*2; i++){
+            //     if(esPar(i)){
+            //         suma += i
+            //     }
+            // }
+
+            // console.log(suma)
+
+        //FORMA 2
+
+            // let cantidadParesDos = Number(prompt("¿Cuántos pares quieres sumar?"))
+            // let sumaDos = 0
+
+            // for(let i = cantidadParesDos; i < cantidadParesDos + cantidadParesDos*2; i++){
+            //     if(esPar(i)){
+            //         suma += i
+            //     }
+            // }
+
+            // console.log(suma)
+
+
+    //RETO 27 - Calcular media.
+
+        // let num = [prompt("Introduce los números")]
+
+        // let numerosEparados = num.splite(",")
+
+        // num.push(-1)
+
+        // console.log(numerosEparados)
+
+        // for(i ; i < num.length ; num[i]){
+        //     let suma = suma + i
+        // }
+
+        //----------------
+
+        // let arrayNumeros = []
+        // let numero;
+
+        // while (numero !== -1){
+        //     numero = Number(prompt("Introduce un número"))
+        //     arrayNumeros.push(numero)
+        // }
+
+        // arrayNumeros.pop()
+
+        // let suma = 0
+
+        // for(let i = 0; i < arrayNumeros.length; i++){
+        //     suma += arrayNumeros[i]
+        // }
+
+        // let media = suma / arrayNumeros.length
+
+        // console.log(media)
+
+
+    //RETO 28 - Clave de acceso.
+
+        // let claveVerdadera = "eureka"
+        // let clave = prompt("Introduce la contraseña.")
+        //     clave.toLowerCase
+        // let intentos = 2
+
+        // const comprobarClave = (contraseña) => {
+        //     if(contraseña === claveVerdadera){
+        //         console.log("Saliendo...")
+        //     } else if(intentos > 0){
+        //         intentos -= 1
+        //         contraseña = prompt("Introduce otra contraseña.")
+        //         comprobarClave(contraseña)
+        //     }else{
+        //         console.log("Agotaste los 3 intentos...LLamando a la poli...")
+        //     }  
+        // }
+
+        //comprobarClave(clave)
+
+    //RETO 29 - Lector números enteros. Máximo, mínimo y media.
+
+        // let arrayNumeros = []
+        // let numero;
+
+        // while (numero !== 0){
+        //     numero = parseInt(prompt("Introduce un número"))
+        //     arrayNumeros.push(numero)
+        //     console.log(arrayNumeros)
+        // }
+
+
+//VANILLA-1
+
+    //RETO - 1 - Mayor, menor e igual.
+
+        // let num1 = Number(prompt("Introduce el primer número."))
+        // let num2 = Number(prompt("Introduce el segundo número."))
+
+        // if(num1 === num2){
+        //     console.log("Los números son iguales.")
+        // }else if(num1 < num2){
+        //     console.log("El segundo número es mayor que el primero.")
+        // }else{
+        //     console.log("El primer número es mayor que el segundo.")
+        // }
+
+    //RETO - 2/3 - Mensaje de bienvenida.
+
+        // let nombre = prompt("Introduce tu nombre.")
+
+        // console.log(`Bienvenido ${nombre}`)
+
+    //RETO - 4 - Área círculo.
     
+        // let radio = Number(prompt("Introduce el área del círculo."))
+        // let pi = 3.1416
+
+        // let area = pi * radio * radio
+
+        // console.log(`El área del círculo es de: ${area}`)
+
+    //RETO - 5 - Divisible entre dos.
+
+        // let num = Number(prompt("Introduce un número."))
+
+        // if(num % 2 === 0){
+        //     console.log("Es divisible entre 2.")
+        // }else{
+        //     console.log("No es divisible entre 2.")
+        // }
+    
+    //RETO - 6 - IVA.
+
+        // let precio = Number(prompt("Introduce el precio."))
+        // let iva = 0
+
+        // iva = precio * (21/100)
+
+        // let precioTotal = precio + iva
+
+        // console.log(`El precio final es de: ${precioTotal}`)
+
+    //RETO - 7/8 - While/For hasta 100.
+
+        // let i = 0
+
+        // while(i <= 100){
+        //     console.log(i)
+        //     i++
+        // }
+
+        // for(i = 0 ; i <= 100 ; i++){
+        //     console.log(i)
+        // }
+
+    //RETO - 9 - Mostrar divisibles entre 2 y 3 hasta 100.
+
+        // for(i = 0; i <= 100 ; i++){
+        //     if(i % 2 === 0 || i % 3 === 0){
+        //         console.log(i)
+        //     }
+        // }
+
+    //RETO - 10 - Número de ventas.
+
+        // let ventas = Number(prompt("Introduce el número de ventas"))
+        // let precio = 0
+        // let precioTotal = 0
+
+        // for(i = 0; i < ventas; i++){
+        //     precio = precio + Number(prompt("Introduce el precio de la compra"))
+        // }
+
+        // console.log(`El precio total es de: ${precio}`)
+    
+//VANILLA 3 - CONDICIONALES
+
+    //RETO - 1 - Dos número, múltiplos o no.
+
+        // let num1 = Number(prompt("Introduce el primer número."))
+        // let num2 = Number(prompt("Introduce el segundo número."))
+
+        // if(num1 % num2 === 0 || num2 % num1 === 0){
+        //     console.log("Son múltiplos.")
+        // }
+
+    //RETO - 2 - Mayor.
+
+        // let num1 = Number(prompt("Introduce el primer número."))
+        // let num2 = Number(prompt("Introduce el segundo número."))
+
+        // if(num1 < num2){
+        //     console.log("El segundo número es mayor que el primero.")
+        // }else if(num1 > num2){
+        //     console.log("El primer número es mayor que el segundo.")
+        // }else{
+        //     console.log("Son iguales.")
+        // }
+    
+    //RETO - 3 - Positivo, negativo o 0.
+
+        // let num = Number(prompt("Introduce el número."))
+
+        // if(num < 0){
+        //     console.log("Es negativo.")
+        // }else if(num > 0){
+        //     console.log("Es positivo.")
+        // }else{
+        //     console.log("Es 0.")
+        // }
+
+    //RETO - 4 - Contar string.
+
+        // let palabra = prompt("Introduce el string.")
+
+        // if(palabra.length >= 5){
+        //     console.log("Tiene 5 o más caracteres.")
+        // }else{
+        //     console.log("Tiene menos de 5 caracteres.")
+        // }
+
+    //RETO - 5 - 3 números entre 1 - 10, promedio de los 3 y determinar si el promedio es mayor que 5.
+
+        let num1 = Number(prompt("Introduce el primer número."))
+        let num2 = Number(prompt("Introduce el segundo número."))
+        let num3 = Number(prompt("Introduce el tercer número."))
+
+        if(num1 > 10 && num1 < 1){
+            num1 = Number(prompt("El primer número tiene que ser mayor que 1 y menor que 10."))
+        }else if(num2 > 10 && num2 < 1){
+            num2 = Number(prompt("El segundo número tiene que ser mayor que 1 y menor que 10."))
+        }else if(num3 > 10 && num3 < 1){
+            num3 = Number(prompt("El tercer número tiene que ser mayor que 1 y menor que 10."))
+        }
+
+        let promedio = (num1 + num2 + num3)/3
+
+        if(promedio > 5){
+            console.log(`El promedio es: ${promedio}. Por lo tanto es mayor que 5.`)
+        }else{
+            console.log(`El promedio es: ${promedio}. Por lo tanto es menor o igual a 5.`)
+        }
+
     //KATA Validación DNI.
 
         // let dni = [prompt("Introduce tu DNI sin la letra")]
