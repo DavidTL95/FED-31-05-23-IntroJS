@@ -158,6 +158,29 @@ const prompt = require("prompt-sync")();
 
     //RETO 9
 
+        // let horas = 0
+        // let minutos = 0
+        // let segundos = 0
+
+        // while(horas <= 24){
+        //     segundos++
+        //     if(segundos == 60){
+        //         segundos = 0
+        //         minutos++
+        //     }
+        // }
+        // if(minutos == 60){
+        //     minutos = 0
+        //     horas++
+        // }
+        // // if(horas == 24){
+        // //     horas = 0
+        // // }
+
+        // console.log(`${horas}:${minutos}:${segundos}`)
+
+        //-----------------------------------------------------------
+
         // let minutos = 0
         // let horas = 0
 
@@ -533,14 +556,33 @@ const prompt = require("prompt-sync")();
 
     //RETO 29 - Lector números enteros. Máximo, mínimo y media.
 
-        // let arrayNumeros = []
-        // let numero;
+        let arrayNumeros = []
+        let numero;
+        let numeroMayor = 0
+        let numeroMenor = 0
+        let suma = 0
 
-        // while (numero !== 0){
-        //     numero = parseInt(prompt("Introduce un número"))
-        //     arrayNumeros.push(numero)
-        //     console.log(arrayNumeros)
-        // }
+        while (numero !== 0){
+            numero = parseInt(prompt("Introduce un número"))
+            arrayNumeros.push(numero)
+            console.log(arrayNumeros)
+        }
+
+        arrayNumeros.pop()
+
+        for(i = 0; i < arrayNumeros.length; i++){
+            if(arrayNumeros[i] > numeroMayor){
+                numeroMayor = arrayNumeros[i]
+            }
+            if(arrayNumeros[i] < numeroMenor){
+                numeroMenor = arrayNumeros[i]
+            }
+            suma += arrayNumeros[i];
+        }
+
+        let media = suma/arrayNumeros.length
+
+        console.log(`El número más grande es el: ${numeroMayor}, el más pequeño es: ${numeroMenor} y la media de todos los números es: ${media.toFixed(2)}`)
 
 
 //VANILLA-1
@@ -675,25 +717,194 @@ const prompt = require("prompt-sync")();
 
     //RETO - 5 - 3 números entre 1 - 10, promedio de los 3 y determinar si el promedio es mayor que 5.
 
-        let num1 = Number(prompt("Introduce el primer número."))
-        let num2 = Number(prompt("Introduce el segundo número."))
-        let num3 = Number(prompt("Introduce el tercer número."))
+        // let num1 = Number(prompt("Introduce el primer número."))
+        // let num2 = Number(prompt("Introduce el segundo número."))
+        // let num3 = Number(prompt("Introduce el tercer número."))
 
-        if(num1 > 10 && num1 < 1){
-            num1 = Number(prompt("El primer número tiene que ser mayor que 1 y menor que 10."))
-        }else if(num2 > 10 && num2 < 1){
-            num2 = Number(prompt("El segundo número tiene que ser mayor que 1 y menor que 10."))
-        }else if(num3 > 10 && num3 < 1){
-            num3 = Number(prompt("El tercer número tiene que ser mayor que 1 y menor que 10."))
-        }
+        // while(num1 >= 10 || num1 <= 1){
+        //     num1 = Number(prompt("El primer número tiene que ser mayor que 1 y menor que 10."))
+        // } 
 
-        let promedio = (num1 + num2 + num3)/3
+        // while(num2 >= 10 || num2 <= 1){
+        //     num2 = Number(prompt("El segundo número tiene que ser mayor que 1 y menor que 10."))
+        // }
 
-        if(promedio > 5){
-            console.log(`El promedio es: ${promedio}. Por lo tanto es mayor que 5.`)
-        }else{
-            console.log(`El promedio es: ${promedio}. Por lo tanto es menor o igual a 5.`)
-        }
+        // while(num3 >= 10 || num3 <= 1){
+        //     num3 = Number(prompt("El tercer número tiene que ser mayor que 1 y menor que 10."))
+        // }
+
+        // let promedio = (num1 + num2 + num3)/3
+
+        // if(promedio > 5){
+        //     console.log(`El promedio es: ${promedio}. Por lo tanto es mayor que 5.`)
+        // }else{
+        //     console.log(`El promedio es: ${promedio}. Por lo tanto es menor o igual a 5.`)
+        // }
+
+    //RETO - 6 - String y comprobar que esté en minúscula.
+
+        // let palabra = prompt("Introduce una palabra.")
+        
+        // if(palabra == palabra.toLowerCase()){
+        //     console.log("Está todo en minúscula.")
+        // }else{
+        //     console.log("No está todo en minúscula.")
+        // }
+
+    //RETO - 7 - Num aleatorio y comprobar si es par o no.
+
+        // let num = parseInt(Math.random() * 21) + 1
+
+        // if(num % 2 === 0){
+        //     console.log(`El número: ${num} es par.`)
+        // }else{
+        //     console.log(`El número: ${num} no es par.`)
+        // }
+
+    //RETO - 8 - Aprobado o suspenso.
+
+        // let num1 = Number(prompt("Introduce la primera nota."))
+        // let num2 = Number(prompt("Introduce la segunda nota."))
+        // let num3 = Number(prompt("Introduce la tercera nota."))
+
+        // let media = (num1 + num2 + num3) / 3
+
+        // if(media >= 5){
+        //     console.log("¡¡¡APROBADO!!!")
+        // }else{
+        //     console.log("PASA A ESTUDIAR >:(")
+        // }
+
+    //RETO - 9 - Ford Fiesta o Ford Focus.
+
+        // console.log("1. Ford Fiesta.")
+        // console.log("2. Ford Focus.")
+
+        // let descuento = 0
+        // let opcion = Number(prompt("¿Qué coche quieres comprar?"))
+
+        // while(opcion != 1 && opcion != 2){
+        //     opcion = Number(prompt("No es una opción válida."))
+        // }
+
+        // switch(opcion){
+        //     case 1:
+
+        //         descuento = 1000 * (5/100)
+        //         console.log(`Tu descuento es de: ${descuento} lereles :)`)
+
+        //         break;
+
+        //     case 2:
+
+        //         descuento = 1000 * (10/100)
+        //         console.log(`Tu descuento es de: ${descuento} lereles :)`)
+
+        //         break;
+
+        //     default:
+        //         console.log("Pos te quedas sin descuento.")
+        // }
+
+    //RETO - 10 - Número mes.
+
+        // let mes = parseInt(prompt("Introduce el número del mes."))
+
+        // switch(mes){
+        //     case 1:
+        //         console.log("Enero tiene 31 días.")
+        //         break;
+        //     case 2:
+        //         console.log("Febrero tiene 28 días.")
+        //         break;
+        //     case 3:
+        //         console.log("Marzo tiene 31 días.")
+        //         break;
+        //     case 4:
+        //         console.log("Abril tiene 30 días.")
+        //         break;
+        //     case 5:
+        //         console.log("Mayo tiene 31 días.")
+        //         break;
+        //     case 6:
+        //         console.log("Junio tiene 30 días.")
+        //         break;
+        //     case 7:
+        //         console.log("Julio tiene 31 días.")
+        //         break;
+        //     case 8:
+        //         console.log("Agosto tiene 31 días.")
+        //         break;
+        //     case 9:
+        //         console.log("Septiembre tiene 30 días.")
+        //         break;
+        //     case 10:
+        //         console.log("Octubre tiene 31 días.")
+        //         break;
+        //     case 11:
+        //         console.log("Noviembre tiene 30 días.")
+        //         break;
+        //     case 12:
+        //         console.log("Diciembre tiene 31 días.")
+        //         break;
+        //     default:
+        //         console.log("Ese mes no es válido.")
+        // }
+
+    //RETO - 11 - Cálculos rueda.
+
+        // let diametro = Number(prompt("Introduce el diámetro de la rueda(en metros)."))
+        // let grosor = Number(prompt("Introduce el grosor de la rueda(en metros)."))
+
+        // if(diametro > 1.4){
+        //     console.log("La rueda es para un vehículo grande.")
+        // }else if(diametro <= 1.4 && diametro > 0.8){
+        //     console.log("La rueda es para un vehículo mediano.")
+        // }else{
+        //     console.log("La rueda es para un vehículo pequeño.")
+        // }
+
+        // if(diametro > 1.4 && grosor < 0.4 || diametro <= 1.4 && diametro > 0.8 && grosor < 0.25){
+        //     console.log("El grosor para esta ruueda es inferior al recomendado.")
+        // }
+
+    //RETO - 12 - Cálculos rueda.
+
+        // console.log("¿Que tipo de vehículo has alquilado?")
+
+        // console.log("1. Coche.")
+        // console.log("2. Moto.")
+        // console.log("3. Autobús.")
+
+        // let vehículo = parseInt(prompt("Selecciona el tipo de vehículo: "))
+
+        // while(vehículo != 1 && vehículo != 2 && vehículo != 3){
+        //     vehículo = parseInt(prompt("Selecciona un tipo de vehículo válido: "))
+        // }
+
+        // let kilometros = Number(prompt("Introduce la cantidad de kilómetros que has recorrido."))
+        // let precio = 0
+
+        // switch(vehículo){
+        //     case 1:
+        //         precio = kilometros * 0.1
+        //         console.log(`El precio total es de: ${precio}`)
+        //         break;
+        //     case 2:
+        //         precio = kilometros * 0.2
+        //         console.log(`El precio total es de: ${precio}`)
+        //         break;
+        //     case 3:
+        //         precio = kilometros * 0.5
+        //         console.log(`El precio total es de: ${precio}`)
+        //         break;
+        //     default:
+        //         console.log("No es un tipo de vehícuilo válido.")
+        // }
+
+//VANILLA 3 - BUCLES
+
+         
 
     //KATA Validación DNI.
 
