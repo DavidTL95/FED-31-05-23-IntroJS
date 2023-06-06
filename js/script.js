@@ -556,34 +556,90 @@ const prompt = require("prompt-sync")();
 
     //RETO 29 - Lector números enteros. Máximo, mínimo y media.
 
-        let arrayNumeros = []
-        let numero;
-        let numeroMayor = 0
-        let numeroMenor = 0
-        let suma = 0
+        // let arrayNumeros = []
+        // let numero;
+        // let suma = 0
 
-        while (numero !== 0){
-            numero = parseInt(prompt("Introduce un número"))
-            arrayNumeros.push(numero)
-            console.log(arrayNumeros)
-        }
+        // numero = parseInt(prompt("Introduce un número"))
 
-        arrayNumeros.pop()
+        // while (numero !== 0){
+        //     arrayNumeros.push(numero)
+        //     numero = parseInt(prompt("Introduce un número"))
+        //     console.log(arrayNumeros)
+        // }
 
-        for(i = 0; i < arrayNumeros.length; i++){
-            if(arrayNumeros[i] > numeroMayor){
-                numeroMayor = arrayNumeros[i]
-            }
-            if(arrayNumeros[i] < numeroMenor){
-                numeroMenor = arrayNumeros[i]
-            }
-            suma += arrayNumeros[i];
-        }
+        // let numeroMayor = arrayNumeros[0]
+        // let numeroMenor = arrayNumeros[0]
 
-        let media = suma/arrayNumeros.length
+        // for(i = 0; i < arrayNumeros.length; i++){
+        //     console.log(arrayNumeros[i])
+        //     if(arrayNumeros[i] > numeroMayor){
+        //         numeroMayor = arrayNumeros[i]
+        //     }
 
-        console.log(`El número más grande es el: ${numeroMayor}, el más pequeño es: ${numeroMenor} y la media de todos los números es: ${media.toFixed(2)}`)
+        //     if(arrayNumeros[i] < numeroMenor){
+        //         numeroMenor = arrayNumeros[i]
+        //     }
+        //     suma += arrayNumeros[i];
+        // }
 
+        // let media = suma/arrayNumeros.length
+
+        // console.log(`El número más grande es el: ${numeroMayor}, el más pequeño es: ${numeroMenor} y la media de todos los números es: ${media.toFixed(2)}`)
+
+    //RETO 30 - Mostrar números múltilos de 2 y 3 hasta 100.
+
+        // for(i = 0; i <= 100; i++){
+        //     if(i % 2 == 0 || i % 3 == 0){
+        //         console.log(`- ${i}`)
+        //     }
+        // }
+    
+    //RETO 31 - Calificaciones alumnos. 
+
+        // let nombre
+
+        // const notasAlumnos = () =>{
+
+        //     console.log("Introduce el nombre del alumno.")
+        //     nombre = prompt("Nombre: ")
+
+        //     if(nombre !== ""){
+
+        //         console.log("Introduce la nota de la parte práctica.")
+        //         let practica = prompt("Nota: ")
+        //         console.log("Introduce la nota de la parte de problemas.")
+        //         let problemas = prompt("Nota: ")
+        //         console.log("Introduce la nota de la parte teórica.")
+        //         let teoria = prompt("Nota: ")
+            
+        //         calculoMedia(practica,problemas,teoria)
+
+        //     }else{
+        //         console.log("SALIENDO...")
+        //     }
+
+        // }
+
+        // const calculoMedia = (nota1, nota2, nota3) => {
+
+        //     nota1 = (nota1 * 10) / 100
+        //     nota2 = (nota2 * 50) / 100
+        //     nota3 = (nota3 * 40) / 100
+
+        //     let media = nota1 + nota2 + nota3
+
+        //     if(media > 0 && media < 10){
+        //         console.log(`La media de ${nombre} es de: ${media}.`)
+        //     }else{
+        //         console.log("!!!ERROR¡¡¡")
+        //         console.log("Alumno no válido.")
+        //         notasAlumnos()
+        //     }
+
+        // }
+
+        // notasAlumnos()
 
 //VANILLA-1
 
@@ -668,7 +724,223 @@ const prompt = require("prompt-sync")();
         // }
 
         // console.log(`El precio total es de: ${precio}`)
+
+    //RETO - 11 - Dia semana.
+
+        // console.log("¿Qué día es hoy?")
+        // let dia = prompt("Día: ")
+
+        // dia.toLowerCase()
     
+        // switch(dia){
+        //     case "lunes":
+        //     case "martes":
+        //     case "miercoles":
+        //     case "jueves":
+        //     case "viernes":
+        //         console.log("Toca laburar. :´(")
+        //         break;
+
+        //     case "sabado":
+        //     case "domingo":
+        //         console.log("¡No hay que laburar! :D")
+        //         break;
+
+        //     default:
+        //         console.log("Ese día no existe.")
+        // }
+
+    //RETO - 12 - Contraseña.
+
+        // let contraseña = "contrasenha"
+        // let intentos = 3
+
+        // while(intentos > 0){
+        //     console.log("Introduce la contraseña: ")
+        //     let contr = prompt("Contraseña: ")
+
+        //     if(contr === contraseña){
+        //         console.log("GOOD JOB")
+        //         break;
+        //     }else{
+        //         intentos--
+        //         console.log(`MAAAAAAAL! Te quedan ${intentos} intentos.`)
+        //     }
+        // }
+
+    //RETO - 13 - Calculadora inversa.
+
+        // console.log("Escribe el primer operador.")
+        // let num1 = parseInt(prompt(""))
+        // console.log("Escribe el segundo operador.")
+        // let num2 = parseInt(prompt(""))
+
+        // console.log("Escribe el signo aritmético. (+, -, *, /, ^, %)")
+        // let signo = prompt("")
+        // let resultado = 0
+
+        // switch(signo){
+        //     case "+":
+        //         resultado = num1 + num2
+        //         console.log(`La suma es: ${resultado}`)
+        //         break;
+        //     case "-":
+        //         resultado = num1 - num2
+        //         console.log(`La resta es: ${resultado}`)
+        //         break;
+        //     case "*":
+        //         resultado  = num1 * num2
+        //         console.log(`La multiplicación es: ${resultado}`)
+        //         break;
+        //     case "/":
+        //         resultado = num1 / num2
+        //         console.log(`La división es: ${resultado}`)
+        //         break;
+        //     case "^":
+        //         resultado = Math.pow(num1,num2)
+        //         console.log(`El exponente es: ${resultado}`)
+        //         break;
+        //     case "%":
+        //         resultado = num1 % num2
+        //         console.log(`El resto es: ${resultado}`)
+        //         break;
+        //     default:
+        //         console.log("Ese símbolo aritemético no está disponible o no existe.")
+        // }
+
+//VANILLA 2
+
+    //RETO 1 - Crea una aplicación que nos calcule el área de un círculo, cuadrado o triángulo. Pediremos al usuario que figura queremos calcular su área y según lo introducido pedirá los valores necesarios para calcular el área. Para ello has de crear un método por cada figura para calcular cada área, este devolverá un número real. Muestra el resultado por consola. Aquí te mostramos que necesita cada figura: 
+    //• Circulo: (radio^2)*PI 
+    //• Triangulo: (base * altura) / 2 
+    //• Cuadrado: lado * lado
+
+        // const calcCirculo = () => {
+
+        //     console.log("Introduce el radio del círculo.")
+        //     let rad = Number(prompt("Radio: "))
+
+        //     let area = ((rad * rad) * Math.PI)
+
+        //     return area;
+        // }
+
+        // const calcTriangulo = () => {
+
+        //     console.log("Introduce la base del triángulo.")
+        //     let base = Number(prompt("Base: "))
+
+        //     console.log("Introduce la altura del triángulo.")
+        //     let altura = Number(prompt("Altura: "))
+
+        //     let area = (base * altura) / 2
+
+        //     return area;
+        // }
+
+        // const calcCuadrado = () => {
+
+        //     console.log("Introduce el lado del cuadrado.")
+        //     let lado = Number(prompt("Base: "))
+
+        //     let area = lado * lado
+
+        //     return area;
+        // }
+
+        // console.log("Indica qué tipo figura quieres comprobar.")
+        // console.log("1. Círculo.")
+        // console.log("2. Triángulo.")
+        // console.log("3. Cuadrado.")
+
+        // let fig = Number(prompt("Figura: "))
+
+        // switch(fig){
+        //     case 1:
+        //         calcCirculo();
+        //         break;
+
+        //     case 2:
+        //         calcTriangulo();
+        //         break;
+
+        //     case 3:
+        //         calcCuadrado();
+        //         break;
+
+        //     default:
+        // }
+
+    //RETO 2 - Crea una aplicación que nos genere una cantidad de números enteros aleatorios pasados por el usuario (prompt). Crea un método donde pasamos como parámetros entre qué números queremos que los genere, podemos pedirlas al usuario antes de generar los números. Este método devolverá un número entero aleatorio. Muestra estos números por consola.
+
+        // console.log("Introduce la cantidad de números que quieres.")
+        // let num = parseInt(prompt("Nº: "));
+
+        // // for(i = 0; i < num; i++){
+        // //     let numAleatorio = parseInt(Math.random() * 100)
+        // //     console.log(numAleatorio)
+        // // }
+
+        // console.log("Introduce la cantidad mínima.")
+        // let numMenor = parseInt(prompt("Nº: "));
+
+        // console.log("Introduce la cantidad máxima.")
+        // let numMax = parseInt(prompt("Nº: "));
+
+        // const aleatorio = (x, y, z) => {
+
+        //     let contador = 0;
+
+        //     while(contador < z){
+
+        //         let numAleatorio = parseInt(Math.random() * 100)
+        //         if(numAleatorio > x && numAleatorio < y){
+        //             console.log(numAleatorio)
+        //             contador++;
+        //         }
+
+        //     }
+        // }
+
+        // aleatorio(numMenor, numMax, num);
+
+    //RETO 3 - Crea una aplicación que nos pida un número por prompt y con un método se lo pasamos por parámetro para que nos indique si es o no un número primo, debe devolver true si es primo sino false. Un número primo es aquel que solo puede dividirse entre 1 y sí mismo. Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo.
+
+        // console.log("Introduce un número.")
+        // let num = parseInt(prompt("Nº: "))
+
+        // const esPrimo = (x) => {
+
+        //     for(i = 2; i < x ; i++){
+        //         if(x % i === 0){
+        //             return false
+        //         }else{
+        //             return true
+        //         }
+        //     }
+        // }
+
+        // console.log(esPrimo(num));
+
+    //RETO 4 - Crea una aplicación que nos calcule el factorial de un número pedido por prompt, lo realizará mediante un método al que le pasamos el número como parámetro. Para calcular el factorial, se multiplica los números anteriores hasta llegar a uno. Por ejemplo, si introducimos un 5, realizará esta operación 5*4*3*2*1=120.
+
+        // console.log("Introduce un número.")
+        // let num = parseInt(prompt("Nº: "))
+
+        // const factorial = (x) => {
+
+        //     let fac = x
+            
+        //     for(i = x - 1; i >= 1; i--){
+        //         fac *= i
+        //     }
+        //     return fac
+        // }
+
+        // console.log(factorial(num));
+
+    //RETO 5 - Crea una aplicación que nos convierta un número en base decimal a binario. Esto lo realizará un método al que le pasaremos el número como parámetro, devolverá un String con el número convertido a binario. Para convertir un número decimal a binario, debemos dividir entre 2 el número y el resultado de esa división se divide entre 2 de nuevo hasta que no se pueda dividir más, el resto que obtengamos de cada división formará el número binario, de abajo a arriba.
+
 //VANILLA 3 - CONDICIONALES
 
     //RETO - 1 - Dos número, múltiplos o no.
@@ -753,7 +1025,10 @@ const prompt = require("prompt-sync")();
 
     //RETO - 7 - Num aleatorio y comprobar si es par o no.
 
-        // let num = parseInt(Math.random() * 21) + 1
+        // let num = Math.round(Math.random() * 21) + 1
+                    //Math.ceil -- Hacia arriba
+                    //Math.floor -- Hacia abajo
+                    //Math.round -- Normal
 
         // if(num % 2 === 0){
         //     console.log(`El número: ${num} es par.`)
@@ -853,8 +1128,8 @@ const prompt = require("prompt-sync")();
 
     //RETO - 11 - Cálculos rueda.
 
-        // let diametro = Number(prompt("Introduce el diámetro de la rueda(en metros)."))
-        // let grosor = Number(prompt("Introduce el grosor de la rueda(en metros)."))
+        // let diametro = parseFloat(prompt("Introduce el diámetro de la rueda(en metros)."))
+        // let grosor = parseFloat(prompt("Introduce el grosor de la rueda(en metros)."))
 
         // if(diametro > 1.4){
         //     console.log("La rueda es para un vehículo grande.")
@@ -904,9 +1179,173 @@ const prompt = require("prompt-sync")();
 
 //VANILLA 3 - BUCLES
 
-         
+    //RETO - 1 - Escribir un script que pida un valor entero y muestre en pantalla una lista de números desde el 0 al valor tecleado. Los números se separarán por comas.
 
-    //KATA Validación DNI.
+        //let numero = parseInt(prompt("Di un número"))
+
+    //RETO - 2 - Hacer un programa que cuente de N en N hasta un número M proporcionado por el usuario. El usuario también ha de proporcionar N.
+
+        // let empezar = parseInt("Di desde que número quieres contar.")
+        // let hasta = parseInt("Di hasta que número quieres contar.")
+        // let num = parseInt("Di de cuanto quieres contar.")
+
+        //  for (let i = empezar; i<= hasta; i += num){
+        //     console.log(i)
+        //  }
+
+    //RETO - 3 - Genera una lista con todos los números pares positivos por debajo del número tecleado por el usuario.
+
+        // let num = parseInt(prompt("Di un número."))
+
+        // //1
+
+        // for(let i = 2; i <= num; i += 2){
+        //     console.log(i)
+        // }
+
+        // //
+
+        // for(let i = 0; i<= num; i++){
+        //     if(i > 0 && i % 2 === 0){
+        //         console.log(i)
+        //     }
+        // }
+
+    //RETO 4 - Escribe la tabla de multiplicar de un número introducido por el usuario.
+
+        // let num = parseInt(prompt("Di un número."))
+
+        // for(let i = 1; i <= 10; i++){
+        //     console.log(num * i)
+        // }
+
+    //RETO 5/6 - Formar un triángulo de este estilo.
+    //*
+    //**
+    //***
+    //****
+
+        // let num = parseInt(prompt("Di el número de líneas."))
+
+        // let string = ""
+
+        // for(let i = 1; i <= num; i++){
+        //     string += "*"
+        //     console.log(string)
+        // }
+
+    //RETO 7 - Calcula la suma de todos los números enteros positivos entre 0 y el número tecleado por el usuario.
+    //INCOMPLETO
+
+        // let suma = 0
+        // for(let i = 0; i < 4; i++){
+        //     let num = parseInt(prompt("Di un número"))
+        // }
+
+    //RETO 8 - Saca por consola los números primos del 0 al número que introduzca un usuario por prompt.
+
+        // let num = parseInt(prompt("Di un número."))
+
+        // const primos = (numero) => {
+        //     for(let i = 2; i < numero; i++){
+        //         if(numero % i === 0){
+        //             return false
+        //         }
+        //     }
+        //     return numero;
+        // };
+
+        // for(i = 2; i <= num; i++){
+        //     if(primos(i)){
+        //         console.log(i)
+        //     }
+        // }
+
+    //RETO 9 - Dado un número entero, muestra una cuenta atrás desde el número tecleado hasta el 0. Modifica el programa para que el usuario introduzca dos números y se efectúe una cuenta atrás desde el primer número hasta el segundo. Modifícalo de nuevo para que el programa determine qué número es el mayor y cuente desde el mayor hasta el menor.
+
+        // let num1 = parseInt(prompt("Di un número."))
+        // let num2 = parseInt(prompt("Di un número."))
+
+
+        // if(num1 > num2){
+        //     for(let i = num1; i >= num2; i--){
+        //         console.log(i)
+        //     }
+        // }else{
+        //     for(let i = num2; i >= num1; i--){
+        //         console.log(i)
+        //     }
+        // }
+
+    //RETO 10 - Pide al usuario cinco números, almacénalos en un array y muestra por consola elresultado de cada uno de ellos multiplicado por 3. Muestra también un array que contenga todos los resultados.
+    
+        // let arryNumero = []
+
+        // for(let i = 0; i < 5; i++){
+        //     let num = prompt("Di un número.")
+        //     arryNumero.push(num)
+        // }
+
+        // let arrayMulti = []
+
+        // for(let i = 0; i < arryNumero.length; i++){
+        //     arrayMulti.push(arryNumero[i] * 3)
+        // }
+
+        // console.log(arryNumero.join(", "))
+        // console.log(arrayMulti.join(", "))
+
+//VANILLA 3 - FUNCIONES
+
+    //RETO 1 - Crea una función que convierta grados celsius a grados fahrenheit.
+
+        // console.log("¿Qué temperatura quieres pasar a Fahrenheit?")
+        // let grados = Number(prompt("Grados: "))
+
+        // const calcularGrados = (x) => {
+        //     let resultado = (x * 9/5) + 32
+        //     console.log(`La temperatura en Fahrenheit es de: ${resultado}`)
+        // }
+
+        // calcularGrados(grados);
+
+    //RETO 2 - Crea una función que determine si un número es par o impar.
+
+        // console.log("¿Qué número quieres comprobar?")
+        // let num = Number(prompt("Nº: "))
+
+        // const parOImpar = (x) => {
+        //     if(x % 2 === 0){
+        //         console.log(`El número ${x} es par.`)
+        //     } else if(x % 2 !== 0){
+        //         console.log(`El número ${x} es impar.`)
+        //     }else{
+        //         console.log("Nah de nah.")
+        //     }
+        // }
+
+        // parOImpar(num);
+
+    //RETO 3 - Crea una función que determine si un número es primo o no.
+
+        // console.log("¿Qué número quieres comprobar?")
+        // let num = Number(prompt("Nº: "))
+
+        // const primo = (x) => {
+        //     for(i = 2; i < x ; i++){
+        //         if(x % i === 0){
+        //             return false
+        //         }
+        //     }
+        // }
+
+        // (primo(num) === false)
+
+        // ? console.log("No es primo.")
+
+        // : console.log("Es primo.")
+
+    //RETO 4 - Crea una función que reciba un número de dni como parámetro, y devuelva la letra del mismo. Si el dni tiene algún error debe comunicarlo. Recuerda que el array de letras de DNI es [TRWAGMYFPDXBNJZSQVHLCKE].
 
         // let dni = [prompt("Introduce tu DNI sin la letra")]
         // let letra = [prompt("Introduce la letra de tu DNI")]
@@ -930,5 +1369,224 @@ const prompt = require("prompt-sync")();
 
         // console.log(validarDNI(dni, letra))
 
+    //RETO 5 - Crea una función que reciba 2 parámetros, precio e iva, y devuelva el precio con iva incluido. Si no recibe el iva, aplicará el 21 por ciento por defecto.
+
+        // console.log("Introduce el precio.")
+        // let precio = Number(prompt("Precio: "))
+
+        // console.log("Introduce el iva.")
+        // let iva = Number(prompt("IVA: "))
+
+        // const calcularIva = (x, y) => {
+
+        //     if(y === 0){
+        //         y = 21
+        //     }
+
+        //     let precioTotal =(x * y) / 100 + x
+        //     console.log(`El precio total es de: ${precioTotal}`)
+
+        // }
+
+        // calcularIva(precio, iva);
+
+    //RETO 6 - Crea una función que determine si una letra es una vocal o una consonante.
+
+        // console.log("Introduce la letra que quieres comprobar.")
+        // let letra = prompt("Letra: ")
+
+        // letra.toLowerCase()
+
+        // const comprobarVocal = (x) => {
+        //     switch(x){
+        //         case "a":
+        //         case "e":
+        //         case "i":
+        //         case "o":
+        //         case "u":
+        //             console.log("Es una vocal.")
+        //             break;
+        //         default:
+        //             console.log("No es una vocal.")
+        //     }
+        // }
+
+        // comprobarVocal(letra)
+
+    //RETO 7 - Crea una función que, dada una frase, convierta las A en 4, las E en 3, las I en 1 y las O en 0.
 
 
+        // console.log("Introduce una frase.")
+        // let mensaje = prompt("")
+        // mensaje = mensaje.toLowerCase()
+
+        // const cambioLetras = (x) => {
+        //     let mensajeDividido = mensaje.split('')
+
+        //     for(let i = 0; i < mensajeDividido.length; i++){
+        //         switch(mensajeDividido[i]){
+        //             case "a":
+        //                 mensajeDividido[i] = "4"
+        //             case "e":
+        //                 mensajeDividido[i] = "3"
+        //             case "i":
+        //                 mensajeDividido[i] = "1"
+        //             case "o":
+        //                 mensajeDividido[i] = "0"
+        //         }
+        //     }
+
+        //     console.log(mensajeDividido)
+
+        // }
+
+        // cambioLetras(mensaje);
+
+    //RETO 8 - Crea una función que, dada una frase, cuente la cantidad de una letra en la misma. Por ejemplo, dada la palabra “javascript” y la letra “a”, debería devolver un 2.
+
+    //RETO 9 - Crea una función que, dado un array de números, devuelva el número más grande del mismo.
+
+        // let arrayNum = []
+
+        // for(i = 0; i )
+
+    //RETO 10 - Crea una función que, dado un array de números, devuelva la suma de todos los números que contiene.
+
+    //RETO 11 - Crea una función que, dados dos números A y B, obtenga el porcentaje(B) de un número(A).
+
+        // console.log("Introduce un número.")
+        // let num = Number(prompt("Nº: "))
+
+        // console.log("Introduce un porcentaje.")
+        // let por = Number(prompt("Porcentaje: "))
+
+        // const porcentaje = (x, y) => {
+
+        //     let porTotal = (x /100) * y
+
+        //     return porTotal
+        // }
+
+        // console.log(porcentaje(num, por))
+
+//KATA NOMBRES ROBOTS.
+
+    // const nombre = (num, pre = "RX") => {
+
+    //     num = parseInt(Math.random() * 1000)
+
+    //     let nom = pre + num
+
+    //     return nom
+
+    // }
+
+    // console.log(nombre())
+
+//EJEMPLO TERNARIAS
+
+    // let nombre = "Alvaro";
+
+    // (nombre === "Alvaro")
+
+    //     ? console.log(true)
+
+    //     : console.log(false)
+
+//ARRAYS.
+
+    // RETO 1 - Dado el array ["A", "B", "C", "D", "E", "F", "G", "H", "I"] crea una función que saque por consola la longitud del array. Crea otra función que obtenga un elemento aleatorio del array y lo saque por consola.
+
+        // let arrayLetras = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+
+        // const long = (x) => console.log(x.length)
+
+        // long(arrayLetras);
+
+        // let alea = parseInt(Math.random() * (arrayLetras.length - 1) )
+
+        // console.log(arrayLetras[alea]);
+
+    // RETO 2 - Crea un array con los nombres de los planetas del Sistema Solar. Crea una función que los liste y los saque por consola.
+
+        // let sistemaSolar = ["Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
+
+        // const leerArray = (array) => {
+
+        //     for(i = 0; i < array.length; i++){
+
+        //         console.log(array[i]);
+
+        //     }
+        // }
+
+        // leerArray(sistemaSolar);
+
+        //-----------------------
+
+        // sistemaSolar.map(
+        //     planeta => console.log(planeta)
+        // )
+
+    // RETO 3 - Dado el array javascript1 = ["DOM", "BOM", "Funciones", "Arrays"], elimina "DOM" del array. Añade en su lugar el elemento "Objetos". Elimina el elemento "Arrays". Añade en su lugar el elemento "ArraysDifíciles". Haz una copia del array que solo incluya los últimos dos elementos. Obtén el índice del elemento "Funciones".
+
+        // let javascript1 = ["DOM", "BOM", "Funciones", "Arrays"]
+
+        // console.log(javascript1)
+
+        // //Sustitutir elementos.
+
+        // javascript1.splice(0, 1, "Objetos")
+
+        // console.log(javascript1)
+
+        // javascript1.splice(3, 1, "ArraysDifíciles")
+
+        // console.log(javascript1)
+
+        // //Devolver los dos últimos elementos.
+
+        // let javascript2 = javascript1.slice(2, 4)
+
+        // console.log(javascript2)
+
+        // //Índice del elemento "Funciones."
+
+        // console.log(javascript1.indexOf("Funciones"))
+
+    //RETO 4 -Crea una string, pásala a array y saca por consola la versión invertida de la original. Ejemplo: "Hola" -> [H, o, l, a] -> [a, l, o, H] -> "aloH"
+
+        // let string = "Hola"
+
+        // let array = Array.from(string)
+
+        // console.log(array.reverse())
+
+    //RETO 5 - Crea dos arrays de la misma longitud y una función que cree un nuevo array que intercale sus elementos y vacíe los arrays originales. Por ejemplo, con los arrays arrayUno = [1, 2, 3] y arrayDos = [4, 5, 6] el resultado debería ser [1, 4, 2, 5, 3, 6]
+
+        // let array1 = [1, 2, 3, 4];
+        // let array2 = [5, 6, 7, 8];
+
+        // let arrayResultado = [];
+
+        // const intercalarArray = (array1, array2) => {
+
+        //     for(let i = 0; i < array1.length; i++){
+
+        //         arrayResultado.push(array1[i]);
+        //         arrayResultado.push(array2[i]);
+
+        //     }
+        // }
+
+        // console.log(intercalarArray(array1,array2))
+
+    //RETO 6 - Crea un array con al menos 10 números y una función que los divida en otros dos arrays: uno para pares y otro para impares. A continuación, saca por consola ambos arrays resultantes concatenados.
+
+        
+
+    //RETO 7 - Utilizando el array del ejercicio anterior, crea una función que saque por consola únicamente los números mayores que 5.
+
+    //RETO 8 - Dados los arrays javascript1 = ["DOM", "BOM", "Funciones", "Arrays"] y javascript2 = ["Objetos", "Arrays", "ParseInt"], crea una función que determine si se repite algún elemento y lo saque por consola.
+
+    //RETO 9 - Imagina que estamos en una carrera y los nombres de las personas que van llegando a la meta se van almacenando en un array (el primero quedaría en la primera posición del array, el segundo en la segunda, etc.). Crea un array con por lo menos cinco nombres. Desestructura el array utilizando el operador rest de manera que puedas llamar al ganador, al segundo y al resto de competidores por separado.
