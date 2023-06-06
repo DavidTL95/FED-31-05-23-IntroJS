@@ -1583,10 +1583,68 @@ const prompt = require("prompt-sync")();
 
     //RETO 6 - Crea un array con al menos 10 números y una función que los divida en otros dos arrays: uno para pares y otro para impares. A continuación, saca por consola ambos arrays resultantes concatenados.
 
-        
+        // let num = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+        // const dividirArray = (arrayNumeros) => {
+
+        //     let numPares = []
+        //     let numImpares = []
+
+        //     for(i = 0; i < arrayNumeros.length; i++){
+        //         if(arrayNumeros[i] % 2 === 0){
+        //             numPares.push(arrayNumeros[i])
+        //         }else{
+        //             numImpares.push(arrayNumeros[i])
+        //         }
+        //     }
+
+        //     let concatenado = numPares.concat(numImpares)
+
+        //     console.log(concatenado)
+
+        // }
+
+        // dividirArray(num)
 
     //RETO 7 - Utilizando el array del ejercicio anterior, crea una función que saque por consola únicamente los números mayores que 5.
 
+        // let num = [4, 11, 12, 2, 14, 15, 1, 17, 18, 3]
+
+        // const mayoresQueCinco = (array) => {
+
+        //     for(i = 0; i < num.length; i++){
+
+        //         if(array[i] > 5){
+        //             console.log(array[i])
+        //         }
+        //     }
+        // }
+
+        // mayoresQueCinco(num)
+
     //RETO 8 - Dados los arrays javascript1 = ["DOM", "BOM", "Funciones", "Arrays"] y javascript2 = ["Objetos", "Arrays", "ParseInt"], crea una función que determine si se repite algún elemento y lo saque por consola.
 
+        // let javascript1 = ["DOM", "BOM", "Funciones", "Arrays"]
+        // let javascript2 = ["Objetos", "Arrays", "ParseInt"]
+
+        // const repeticion = (array1, array2) => {
+
+        //     let palabra
+
+        //     for(let i = 0; i < array1.length; i++){
+
+        //         for(let h = 0; h < array2.length; h++){
+
+        //             if(array1[i] === array2[h]){
+        //                 console.log(array1[i])
+        //             }
+
+        //         }
+        //     }
+        // }
+
+        // repeticion(javascript1,javascript2)
+
     //RETO 9 - Imagina que estamos en una carrera y los nombres de las personas que van llegando a la meta se van almacenando en un array (el primero quedaría en la primera posición del array, el segundo en la segunda, etc.). Crea un array con por lo menos cinco nombres. Desestructura el array utilizando el operador rest de manera que puedas llamar al ganador, al segundo y al resto de competidores por separado.
+
+        
